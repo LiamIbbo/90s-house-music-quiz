@@ -6,8 +6,6 @@ An interactive web-based quiz application that tests users' knowledge of 90's ho
 
 **[View Live Quiz](https://liamupnorth.github.io/90s-house-music-quiz/)**
 
-Note: Replace `yourusername` with your actual GitHub username after deployment.
-
 ---
 
 ## Table of Contents
