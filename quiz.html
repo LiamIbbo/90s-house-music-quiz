@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - 90's House Music Quiz</title>
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>90's House Music Quiz</h1>
+            <p class="progress-text">Question <span id="current-question">1</span> of <span id="total-questions">10</span></p>
+            
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="quiz-box">
+                <!-- Question Display -->
+                <h2 id="question">Question will appear here</h2>
+                
+                <!-- Answer Buttons -->
+                <div class="answers-container" id="answers-container">
+                    <!-- Answer buttons will be dynamically generated here -->
+                </div>
+
+                <!-- Next Button -->
+                <button class="btn-next" id="next-btn" disabled>Next Question</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created by Liam Ibbetson | 2026</p>
+        </footer>
+    </div>
+
+    <!-- Link JavaScript files -->
+    <script src="questions.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

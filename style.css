@@ -1,0 +1,526 @@
+/* ========================================
+   PASTEL COLOR SCHEME & POPPINS FONT
+   Colors: Pastel Green, Beige, Brown
+   ======================================== */
+
+:root {
+    /* Pastel Color Palette */
+    --pastel-green: #A8D5BA;      /* Main/Primary color */
+    --beige: #F5E6D3;             /* Background/Light accent */
+    --brown: #8B7355;             /* Text/Secondary color */
+    
+    /* Additional shades for variety */
+    --dark-green: #7FB89A;        /* Darker green for hover states */
+    --light-beige: #FAF3E9;       /* Very light beige for backgrounds */
+    --dark-brown: #6B5744;        /* Darker brown for emphasis */
+    
+    /* Utility colors */
+    --white: #FFFFFF;
+    --success: #81C784;
+    --error: #E57373;
+}
+
+/* ========================================
+   RESET & BASE STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-beige);
+    color: var(--brown);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* ========================================
+   LAYOUT
+   ======================================== */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--brown);
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--dark-green);
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, var(--pastel-green) 0%, var(--dark-green) 100%);
+    color: var(--white);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(139, 115, 85, 0.1);
+}
+
+header h1 {
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+    color: var(--light-beige);
+    font-size: 1.1rem;
+}
+
+/* ========================================
+   NAVIGATION & LINKS
+   ======================================== */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--pastel-green);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: var(--dark-green);
+    text-decoration: underline;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.button-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-start,
+.btn-instructions,
+.btn-next {
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-start {
+    background-color: var(--pastel-green);
+    color: var(--white);
+}
+
+.btn-start:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(127, 184, 154, 0.3);
+}
+
+.btn-instructions {
+    background-color: var(--beige);
+    color: var(--brown);
+    border: 2px solid var(--brown);
+}
+
+.btn-instructions:hover {
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+.btn-next {
+    background-color: var(--pastel-green);
+    color: var(--white);
+    padding: 15px 40px;
+}
+
+.btn-next:hover:not(:disabled) {
+    background-color: var(--dark-green);
+    transform: translateY(-2px);
+}
+
+.btn-next:disabled {
+    background-color: #D0D0D0;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* ========================================
+   WELCOME BOX (Home Page)
+   ======================================== */
+.welcome-box {
+    background: var(--white);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(139, 115, 85, 0.1);
+    text-align: center;
+    border: 3px solid var(--beige);
+}
+
+.welcome-box h2 {
+    color: var(--pastel-green);
+    font-size: 2rem;
+}
+
+/* ========================================
+   INSTRUCTIONS PAGE
+   ======================================== */
+.instructions-box {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(139, 115, 85, 0.1);
+    margin-bottom: 30px;
+    border: 3px solid var(--beige);
+}
+
+.instruction-step {
+    padding: 25px;
+    margin-bottom: 20px;
+    background: var(--light-beige);
+    border-radius: 15px;
+    border-left: 5px solid var(--pastel-green);
+    transition: transform 0.3s;
+}
+
+.instruction-step:hover {
+    transform: translateX(5px);
+}
+
+.instruction-step h3 {
+    color: var(--brown);
+}
+
+/* ========================================
+   QUIZ PAGE - PROGRESS BAR
+   ======================================== */
+.progress-container {
+    width: 100%;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--white);
+    width: 0%;
+    transition: width 0.4s ease;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+}
+
+.progress-text {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* ========================================
+   QUIZ BOX
+   ======================================== */
+.quiz-box {
+    background: var(--white);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(139, 115, 85, 0.1);
+    border: 3px solid var(--beige);
+}
+
+#question {
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+    color: var(--dark-brown);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* ========================================
+   ANSWER BUTTONS
+   ======================================== */
+.answers-container {
+    margin-bottom: 35px;
+}
+
+.answer-btn {
+    display: block;
+    width: 100%;
+    padding: 18px 20px;
+    margin-bottom: 15px;
+    background-color: var(--beige);
+    border: 3px solid var(--beige);
+    border-radius: 15px;
+    font-size: 1.05rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--brown);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.answer-btn:hover {
+    border-color: var(--pastel-green);
+    background-color: var(--white);
+    transform: translateX(5px);
+}
+
+.answer-btn.selected {
+    background-color: var(--pastel-green);
+    color: var(--white);
+    border-color: var(--pastel-green);
+    font-weight: 600;
+}
+
+/* ========================================
+   RESULTS PAGE
+   ======================================== */
+.results-box {
+    background: var(--white);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(139, 115, 85, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    border: 3px solid var(--beige);
+}
+
+.results-box h2 {
+    color: var(--pastel-green);
+    font-size: 2rem;
+}
+
+.score-display {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--pastel-green);
+    margin: 25px 0;
+    text-shadow: 2px 2px 4px rgba(168, 213, 186, 0.2);
+}
+
+.percentage {
+    font-size: 2.5rem;
+    color: var(--brown);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.message {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.message.excellent {
+    background-color: #C8E6C9;
+    color: #2E7D32;
+}
+
+.message.good {
+    background-color: #B2DFDB;
+    color: #00695C;
+}
+
+.message.okay {
+    background-color: #FFE0B2;
+    color: #E65100;
+}
+
+.message.needs-work {
+    background-color: #FFCCBC;
+    color: #BF360C;
+}
+
+/* ========================================
+   ANSWER REVIEW
+   ======================================== */
+.review-box {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(139, 115, 85, 0.1);
+    margin-bottom: 30px;
+    border: 3px solid var(--beige);
+}
+
+.review-box h2 {
+    color: var(--pastel-green);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.review-item {
+    padding: 25px;
+    margin-bottom: 20px;
+    background: var(--light-beige);
+    border-radius: 15px;
+    text-align: left;
+    border-left: 5px solid var(--pastel-green);
+}
+
+.review-item h3 {
+    color: var(--dark-brown);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.review-item p {
+    margin: 12px 0;
+    font-size: 1rem;
+}
+
+.user-answer {
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.correct {
+    color: #2E7D32;
+    background-color: #C8E6C9;
+}
+
+.incorrect {
+    color: #C62828;
+    background-color: #FFCDD2;
+}
+
+.explanation {
+    background: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-style: italic;
+    border: 2px solid var(--beige);
+    color: var(--brown);
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    color: var(--brown);
+    border-top: 3px solid var(--beige);
+    font-weight: 300;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .welcome-box,
+    .quiz-box,
+    .results-box,
+    .instructions-box,
+    .review-box {
+        padding: 30px 25px;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .btn-start,
+    .btn-instructions {
+        width: 100%;
+    }
+    
+    .score-display {
+        font-size: 3rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    #question {
+        font-size: 1.3rem;
+    }
+    
+    .answer-btn {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+    
+    .score-display {
+        font-size: 2.5rem;
+    }
+    
+    .percentage {
+        font-size: 2rem;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+button:focus,
+a:focus,
+.answer-btn:focus {
+    outline: 3px solid var(--pastel-green);
+    outline-offset: 3px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}

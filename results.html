@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - 90's House Music Quiz</title>
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz Complete!</h1>
+            <p>Here's how you did on the 90's House Music Quiz</p>
+        </header>
+
+        <main>
+            <!-- Results Summary Box -->
+            <div class="results-box">
+                <h2>Your Score</h2>
+                <div class="score-display" id="score-display">0/10</div>
+                <div class="percentage" id="percentage">0%</div>
+                <div class="message" id="message"></div>
+            </div>
+
+            <!-- Answer Review Section -->
+            <div class="review-box">
+                <h2>Answer Review</h2>
+                <div id="review-container">
+                    <!-- Review items will be dynamically generated here -->
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="button-group">
+                <a href="quiz.html" class="btn-start">Retake Quiz</a>
+                <a href="index.html" class="btn-instructions">Back to Home</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created by Liam Ibbetson | 2026</p>
+        </footer>
+    </div>
+
+    <!-- Link JavaScript files -->
+    <script src="questions.js"></script>
+    <script src="results.js"></script>
+</body>
+</html>
