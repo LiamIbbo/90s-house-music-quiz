@@ -298,8 +298,8 @@ Feel free to use this code for learning purposes. If you use significant portion
 
 **Liam Ibbetson**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: [@liamibbo](https://github.com/liamibbo)
+- Email: liamupnorth@gmail.com
 
 ---
 
@@ -307,12 +307,3 @@ Feel free to use this code for learning purposes. If you use significant portion
 
 - Thanks to The Learning People for the course structure and guidance
 - Thanks to my mentor for support and feedback
-- Thanks to the pioneers of house music who created the culture this quiz celebrates
-
----
-
-**Built with care and a passion for 90's house music**
-
----
-
-"House music is a feeling that words can't explain." - Frankie Knuckles
